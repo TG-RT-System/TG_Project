@@ -1,0 +1,10 @@
+{
+    "CPU":  
+    {
+        "0": {"Arch": "Armv8-A", "Feature":"Cortex-A73"},
+        "1": {"Arch": "Armv8-A", "Feature":"Cortex-A73"},
+        "2": {"Arch": "Armv8-A", "Feature":"Cortex-A35"}
+    }
+
+}
+

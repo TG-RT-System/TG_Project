@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>DAG - {{ dag.id }}</title>
+    <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre@1.8.1/dist/cytoscape-dagre.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f5f6fa;
+        }
+        header {
+            padding: 14px 24px;
+            background: #2f3640;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        header a {
+            color: #9cb9f0;
+            font-size: 12px;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        header .sub {
+            margin-top: 4px;
+            font-size: 12px;
+            color: #dcdde1;
+        }
+        #wrap {
+            display: flex;
+            height: calc(100vh - 84px);
+        }
+        #cy {
+            flex: 1;
+            background: #fff;
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            margin: 12px;
+        }
+        #info {
+            width: 240px;
+            margin: 12px 12px 12px 0;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #333;
+            height: fit-content;
+        }
+        #info h3 {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 6px;
+        }
+        #info .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+        }
+        .legend {
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            padding-top: 8px;
+            font-size: 12px;
+        }
+        .legend .item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 2px 0;
+        }
+        .legend .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DAG · {{ dag.id }}<a href="{{ url_for('index') }}">← 返回列表</a></h1>
+        <div class="sub">{{ dag.root }}{{ "/" if dag.file else "" }}{{ dag.file }} · {{ dag.nodes|length }} 节点 · {{ dag.edges|length }} 边 · T={{ dag.T }} · D={{ dag.D }}</div>
+    </header>
+    <div id="wrap">
+        <div id="cy"></div>
+        <div id="info">
+            <h3>节点信息</h3>
+            <div class="row"><span>提示:</span><span>点击节点查看</span></div>
+        </div>
+    </div>
+
+    <script>
+        const palette = [
+            "#4074d6", "#e67e22", "#27ae60", "#8e44ad", "#16a085",
+            "#c0392b", "#2c3e50", "#f39c12", "#7f8c8d", "#3498db"
+        ];
+
+        function nodeColor(node) {
+            const a = node.data("A");
+            if (a === null || a === undefined || a === "") return "#4074d6";
+            return palette[Number(a) % palette.length];
+        }
+
+        function showNode(node) {
+            const d = node.data();
+            document.getElementById("info").innerHTML =
+                "<h3>节点信息</h3>" +
+                `<div class="row"><span>ID</span><span><b>${d.id}</b></span></div>` +
+                `<div class="row"><span>名称</span><span>${d.label}</span></div>` +
+                `<div class="row"><span>W (最坏)</span><span>${d.W ?? "—"}</span></div>` +
+                `<div class="row"><span>B (最好)</span><span>${d.B ?? "—"}</span></div>` +
+                `<div class="row"><span>O (偏移)</span><span>${d.O ?? "—"}</span></div>` +
+                `<div class="row"><span>A (核心)</span><span>${d.A ?? "—"}</span></div>` +
+                `<div class="row"><span>P (优先级)</span><span>${d.P ?? "—"}</span></div>`;
+        }
+
+        // 归一化边:加上唯一 id
+        const raw = {{ dag|tojson }};
+        const elements = {
+            nodes: raw.nodes.map(n => ({ data: n })),
+            edges: raw.edges.map((e, i) => ({ data: { id: "e" + i, source: e.source, target: e.target } }))
+        };
+
+        cytoscape.use(cytoscapeDagre);
+        const cy = cytoscape({
+            container: document.getElementById("cy"),
+            elements: elements,
+            style: [
+                {
+                    selector: "node",
+                    style: {
+                        shape: "round-rectangle",
+                        width: "label",
+                        height: 30,
+                        padding: "8px",
+                        "background-color": n => nodeColor(n),
+                        label: n => {
+                            const w = n.data("W");
+                            return `${n.data("label")}${typeof w === "number" ? ` (${w})` : ""}`;
+                        },
+                        color: "#fff",
+                        "text-valign": "center",
+                        "text-halign": "center",
+                        "font-size": 12,
+                        "border-width": 1,
+                        "border-color": "#2f3640",
+                        "overlay-opacity": 0.2
+                    }
+                },
+                {
+                    selector: "edge",
+                    style: {
+                        width: 1.5,
+                        "line-color": "#718093",
+                        "target-arrow-color": "#718093",
+                        "target-arrow-shape": "triangle",
+                        "curve-style": "bezier"
+                    }
+                }
+            ],
+            layout: {
+                name: "dagre",
+                rankDir: "LR",
+                padding: 24,
+                animate: false
+            },
+            wheelSensitivity: 0.2
+        });
+
+        cy.on("tap", "node", evt => showNode(evt.target));
+    </script>
+</body>
+</html>

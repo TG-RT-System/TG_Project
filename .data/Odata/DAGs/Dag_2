@@ -1,0 +1,142 @@
+digraph {
+	rankdir=LR
+	1 [label="1
+W:{'Armv8-A': {'Cortex-A73': 34276, 'Cortex-A35': 68552}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	0 [label="0
+W:{'Armv8-A': {'Cortex-A73': 1500, 'Cortex-A35': 3000}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	2 [label="2
+W:{'Armv8-A': {'Cortex-A73': 32220, 'Cortex-A35': 64440}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	3 [label="3
+W:{'Armv8-A': {'Cortex-A73': 32220, 'Cortex-A35': 64440}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	4 [label="4
+W:{'Armv8-A': {'Cortex-A73': 40920, 'Cortex-A35': 81840}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	5 [label="5
+W:{'Armv8-A': {'Cortex-A73': 40920, 'Cortex-A35': 81840}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	6 [label="6
+W:{'Armv8-A': {'Cortex-A73': 20000, 'Cortex-A35': 40000}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	7 [label="7
+W:{'Armv8-A': {'Cortex-A73': 20000, 'Cortex-A35': 40000}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	8 [label="8
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	9 [label="9
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	10 [label="10
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	11 [label="11
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	12 [label="12
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	13 [label="13
+W:{'Armv8-A': {'Cortex-A73': 36392, 'Cortex-A35': 72784}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	14 [label="14
+W:{'Armv8-A': {'Cortex-A73': 292952, 'Cortex-A35': 585904}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	15 [label="15
+W:{'Armv8-A': {'Cortex-A73': 292952, 'Cortex-A35': 585904}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	16 [label="16
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	17 [label="17
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	18 [label="18
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	19 [label="19
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	20 [label="20
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	21 [label="21
+W:{'Armv8-A': {'Cortex-A73': 90936, 'Cortex-A35': 181872}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	22 [label="22
+W:{'Armv8-A': {'Cortex-A73': 22264, 'Cortex-A35': 44528}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	23 [label="23
+W:{'Armv8-A': {'Cortex-A73': 22264, 'Cortex-A35': 44528}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	24 [label="24
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	25 [label="25
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	26 [label="26
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	27 [label="27
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	28 [label="28
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	29 [label="29
+W:{'Armv8-A': {'Cortex-A73': 32136, 'Cortex-A35': 64272}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	30 [label="30
+W:{'Armv8-A': {'Cortex-A73': 34056, 'Cortex-A35': 68112}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	31 [label="31
+W:{'Armv8-A': {'Cortex-A73': 34056, 'Cortex-A35': 68112}}
+B:{'Armv8-A': {'Cortex-A73': 0, 'Cortex-A35': 0}}" color=black shape=polygon style=rounded]
+	1 -> 0
+	2 -> 0
+	3 -> 0
+	4 -> 0
+	5 -> 0
+	6 -> 0
+	7 -> 0
+	8 -> 4
+	9 -> 4
+	10 -> 5
+	11 -> 5
+	12 -> 4
+	13 -> 5
+	14 -> 8
+	14 -> 9
+	14 -> 12
+	15 -> 10
+	15 -> 11
+	15 -> 13
+	16 -> 14
+	17 -> 15
+	18 -> 14
+	19 -> 14
+	20 -> 15
+	21 -> 15
+	22 -> 16
+	22 -> 18
+	22 -> 19
+	23 -> 17
+	23 -> 20
+	23 -> 21
+	24 -> 22
+	25 -> 23
+	26 -> 22
+	27 -> 22
+	28 -> 23
+	29 -> 23
+	30 -> 24
+	30 -> 26
+	30 -> 27
+	31 -> 25
+	31 -> 28
+	31 -> 29
+}

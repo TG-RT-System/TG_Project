@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Visualization · DAG 检测</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f5f6fa;
+        }
+        header {
+            padding: 14px 24px;
+            background: #2f3640;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .scan {
+            display: flex;
+            gap: 8px;
+            padding: 16px 24px;
+        }
+        .scan input {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 13px;
+            border: 1px solid #dcdde1;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .scan button {
+            padding: 8px 20px;
+            font-size: 13px;
+            background: #4074d6;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .scan button:hover {
+            background: #3564bd;
+        }
+        main {
+            padding: 0 24px 24px;
+        }
+        .hint {
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #888;
+        }
+        .error {
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #dcdde1;
+            text-align: left;
+            font-size: 13px;
+        }
+        th {
+            background: #eef0f3;
+        }
+        tr:hover {
+            background: #f0f7ff;
+            cursor: pointer;
+        }
+        a {
+            color: #4074d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Visualization · DAG 检测</h1>
+    </header>
+    <div class="scan">
+        <input id="root" type="text" placeholder="输入 JSON DAG 目录或单个 JSON 文件路径" value="{{ default_root }}">
+        <button id="scanBtn">检测</button>
+    </div>
+    <main>
+        <div id="error" class="error" style="display:none"></div>
+        <div id="hint" class="hint"></div>
+        <table id="table" style="display:none">
+            <thead>
+                <tr>
+                    <th>DAG ID</th>
+                    <th>文件</th>
+                    <th>节点数</th>
+                    <th>边数</th>
+                    <th>T</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </main>
+
+    <script>
+        const elRoot = document.getElementById("root");
+        const elError = document.getElementById("error");
+        const elHint = document.getElementById("hint");
+        const elTable = document.getElementById("table");
+        const elTbody = document.getElementById("tbody");
+
+        async function scan() {
+            const root = elRoot.value.trim();
+            elError.style.display = "none";
+            if (!root) {
+                elError.textContent = "请输入要扫描的路径";
+                elError.style.display = "block";
+                return;
+            }
+            elHint.textContent = "扫描中…";
+            elTable.style.display = "none";
+            try {
+                const resp = await fetch("/api/scan", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ root: root })
+                });
+                const data = await resp.json();
+                if (!resp.ok) {
+                    elError.textContent = data.error || "扫描失败";
+                    elError.style.display = "block";
+                    elHint.textContent = "";
+                    return;
+                }
+                const rows = [];
+                for (const d of data.dags) {
+                    const url = "/dag?root=" + encodeURIComponent(data.root) + "&path=" + encodeURIComponent(d.file);
+                    rows.push(
+                        "<tr onclick=\"location.href='" + url + "'\">" +
+                        "<td><a href='" + url + "'>" + d.id + "</a></td>" +
+                        "<td>" + d.file + "</td>" +
+                        "<td>" + d.V + "</td>" +
+                        "<td>" + d.E + "</td>" +
+                        "<td>" + (d.T !== "" ? d.T : "—") + "</td>" +
+                        "<td>" + (d.D !== "" ? d.D : "—") + "</td>" +
+                        "</tr>"
+                    );
+                }
+                elTbody.innerHTML = rows.join("");
+                elTable.style.display = "block";
+                let hint = "扫描地址:" + data.root + " · 检测到 " + data.dags.length + " 个 DAG。点击 DAG ID 查看图形化";
+                if (data.errors > 0) hint += " · " + data.errors + " 个 JSON 文件解析失败,已跳过";
+                if (data.dags.length === 0) {
+                    hint += " · 未检测到含 DAG 结构的 JSON(需含 G:{V,E} 且节点数 ≥ 2)";
+                }
+                elHint.textContent = hint;
+            } catch (e) {
+                elError.textContent = "请求失败:" + e;
+                elError.style.display = "block";
+                elHint.textContent = "";
+            }
+        }
+
+        document.getElementById("scanBtn").addEventListener("click", scan);
+        elRoot.addEventListener("keydown", e => { if (e.key === "Enter") scan(); });
+    </script>
+</body>
+</html>

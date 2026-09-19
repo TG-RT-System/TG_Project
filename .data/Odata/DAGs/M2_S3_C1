@@ -1,0 +1,292 @@
+digraph {
+	rankdir=LR
+	0 [label="0
+W:{'Armv8-A': {'Cortex-A73': 1, 'Cortex-A35': 2}}
+B:{'Armv8-A': {'Cortex-A73': 1, 'Cortex-A35': 2}}" color=black shape=polygon style=rounded]
+	1 [label="1
+W:{'Armv8-A': {'Cortex-A73': 10000, 'Cortex-A35': 20000}}
+B:{'Armv8-A': {'Cortex-A73': 5919, 'Cortex-A35': 11838}}" color=black shape=polygon style=rounded]
+	2 [label="2
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 50705, 'Cortex-A35': 101410}}" color=black shape=polygon style=rounded]
+	8 [label="8
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 154728, 'Cortex-A35': 309456}}" color=black shape=polygon style=rounded]
+	9 [label="9
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 192902, 'Cortex-A35': 385804}}" color=black shape=polygon style=rounded]
+	10 [label="10
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 120639, 'Cortex-A35': 241278}}" color=black shape=polygon style=rounded]
+	11 [label="11
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 83612, 'Cortex-A35': 167224}}" color=black shape=polygon style=rounded]
+	12 [label="12
+W:{'Armv8-A': {'Cortex-A73': 290488, 'Cortex-A35': 580976}}
+B:{'Armv8-A': {'Cortex-A73': 257920, 'Cortex-A35': 515840}}" color=black shape=polygon style=rounded]
+	3 [label="3
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 83737, 'Cortex-A35': 167474}}" color=black shape=polygon style=rounded]
+	4 [label="4
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 83960, 'Cortex-A35': 167920}}" color=black shape=polygon style=rounded]
+	5 [label="5
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 15982, 'Cortex-A35': 31964}}" color=black shape=polygon style=rounded]
+	6 [label="6
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 8574, 'Cortex-A35': 17148}}" color=black shape=polygon style=rounded]
+	7 [label="7
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 20767, 'Cortex-A35': 41534}}" color=black shape=polygon style=rounded]
+	38 [label="38
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 29861, 'Cortex-A35': 59722}}" color=black shape=polygon style=rounded]
+	39 [label="39
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 76879, 'Cortex-A35': 153758}}" color=black shape=polygon style=rounded]
+	40 [label="40
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 5293, 'Cortex-A35': 10586}}" color=black shape=polygon style=rounded]
+	41 [label="41
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 61692, 'Cortex-A35': 123384}}" color=black shape=polygon style=rounded]
+	62 [label="62
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 1441, 'Cortex-A35': 2882}}" color=black shape=polygon style=rounded]
+	13 [label="13
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 9650, 'Cortex-A35': 19300}}" color=black shape=polygon style=rounded]
+	14 [label="14
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 5281, 'Cortex-A35': 10562}}" color=black shape=polygon style=rounded]
+	15 [label="15
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 83414, 'Cortex-A35': 166828}}" color=black shape=polygon style=rounded]
+	16 [label="16
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 71286, 'Cortex-A35': 142572}}" color=black shape=polygon style=rounded]
+	17 [label="17
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 10518, 'Cortex-A35': 21036}}" color=black shape=polygon style=rounded]
+	18 [label="18
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 80625, 'Cortex-A35': 161250}}" color=black shape=polygon style=rounded]
+	19 [label="19
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 41553, 'Cortex-A35': 83106}}" color=black shape=polygon style=rounded]
+	20 [label="20
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 72854, 'Cortex-A35': 145708}}" color=black shape=polygon style=rounded]
+	21 [label="21
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 19314, 'Cortex-A35': 38628}}" color=black shape=polygon style=rounded]
+	22 [label="22
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 17034, 'Cortex-A35': 34068}}" color=black shape=polygon style=rounded]
+	23 [label="23
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 85896, 'Cortex-A35': 171792}}" color=black shape=polygon style=rounded]
+	24 [label="24
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 45782, 'Cortex-A35': 91564}}" color=black shape=polygon style=rounded]
+	25 [label="25
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 21106, 'Cortex-A35': 42212}}" color=black shape=polygon style=rounded]
+	26 [label="26
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 69184, 'Cortex-A35': 138368}}" color=black shape=polygon style=rounded]
+	27 [label="27
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 14471, 'Cortex-A35': 28942}}" color=black shape=polygon style=rounded]
+	28 [label="28
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 21927, 'Cortex-A35': 43854}}" color=black shape=polygon style=rounded]
+	29 [label="29
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 14384, 'Cortex-A35': 28768}}" color=black shape=polygon style=rounded]
+	30 [label="30
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 36232, 'Cortex-A35': 72464}}" color=black shape=polygon style=rounded]
+	31 [label="31
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 58476, 'Cortex-A35': 116952}}" color=black shape=polygon style=rounded]
+	32 [label="32
+W:{'Armv8-A': {'Cortex-A73': 100000, 'Cortex-A35': 200000}}
+B:{'Armv8-A': {'Cortex-A73': 99588, 'Cortex-A35': 199176}}" color=black shape=polygon style=rounded]
+	33 [label="33
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 48991, 'Cortex-A35': 97982}}" color=black shape=polygon style=rounded]
+	34 [label="34
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 34371, 'Cortex-A35': 68742}}" color=black shape=polygon style=rounded]
+	35 [label="35
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 32049, 'Cortex-A35': 64098}}" color=black shape=polygon style=rounded]
+	36 [label="36
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 2904, 'Cortex-A35': 5808}}" color=black shape=polygon style=rounded]
+	37 [label="37
+W:{'Armv8-A': {'Cortex-A73': 96008, 'Cortex-A35': 192016}}
+B:{'Armv8-A': {'Cortex-A73': 33789, 'Cortex-A35': 67578}}" color=black shape=polygon style=rounded]
+	42 [label="42
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 10141, 'Cortex-A35': 20282}}" color=black shape=polygon style=rounded]
+	43 [label="43
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 76870, 'Cortex-A35': 153740}}" color=black shape=polygon style=rounded]
+	44 [label="44
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 25272, 'Cortex-A35': 50544}}" color=black shape=polygon style=rounded]
+	45 [label="45
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 54063, 'Cortex-A35': 108126}}" color=black shape=polygon style=rounded]
+	63 [label="63
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 39841, 'Cortex-A35': 79682}}" color=black shape=polygon style=rounded]
+	46 [label="46
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 3855, 'Cortex-A35': 7710}}" color=black shape=polygon style=rounded]
+	47 [label="47
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 25352, 'Cortex-A35': 50704}}" color=black shape=polygon style=rounded]
+	48 [label="48
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 38787, 'Cortex-A35': 77574}}" color=black shape=polygon style=rounded]
+	49 [label="49
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 80578, 'Cortex-A35': 161156}}" color=black shape=polygon style=rounded]
+	64 [label="64
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 47102, 'Cortex-A35': 94204}}" color=black shape=polygon style=rounded]
+	50 [label="50
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 48751, 'Cortex-A35': 97502}}" color=black shape=polygon style=rounded]
+	51 [label="51
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 70652, 'Cortex-A35': 141304}}" color=black shape=polygon style=rounded]
+	52 [label="52
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 72327, 'Cortex-A35': 144654}}" color=black shape=polygon style=rounded]
+	53 [label="53
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 71708, 'Cortex-A35': 143416}}" color=black shape=polygon style=rounded]
+	65 [label="65
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 32702, 'Cortex-A35': 65404}}" color=black shape=polygon style=rounded]
+	54 [label="54
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 31199, 'Cortex-A35': 62398}}" color=black shape=polygon style=rounded]
+	55 [label="55
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 30132, 'Cortex-A35': 60264}}" color=black shape=polygon style=rounded]
+	56 [label="56
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 65638, 'Cortex-A35': 131276}}" color=black shape=polygon style=rounded]
+	57 [label="57
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 27563, 'Cortex-A35': 55126}}" color=black shape=polygon style=rounded]
+	66 [label="66
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 14274, 'Cortex-A35': 28548}}" color=black shape=polygon style=rounded]
+	58 [label="58
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 40281, 'Cortex-A35': 80562}}" color=black shape=polygon style=rounded]
+	59 [label="59
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 25706, 'Cortex-A35': 51412}}" color=black shape=polygon style=rounded]
+	60 [label="60
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 73999, 'Cortex-A35': 147998}}" color=black shape=polygon style=rounded]
+	61 [label="61
+W:{'Armv8-A': {'Cortex-A73': 87560, 'Cortex-A35': 175120}}
+B:{'Armv8-A': {'Cortex-A73': 50344, 'Cortex-A35': 100688}}" color=black shape=polygon style=rounded]
+	67 [label="67
+W:{'Armv8-A': {'Cortex-A73': 57332, 'Cortex-A35': 114664}}
+B:{'Armv8-A': {'Cortex-A73': 20648, 'Cortex-A35': 41296}}" color=black shape=polygon style=rounded]
+	0 -> 1
+	1 -> 2
+	1 -> 8
+	1 -> 9
+	1 -> 10
+	1 -> 11
+	1 -> 12
+	2 -> 3
+	2 -> 4
+	2 -> 5
+	2 -> 6
+	8 -> 13
+	8 -> 14
+	8 -> 15
+	8 -> 16
+	9 -> 17
+	9 -> 18
+	9 -> 19
+	9 -> 20
+	10 -> 21
+	10 -> 22
+	10 -> 23
+	10 -> 24
+	11 -> 25
+	11 -> 26
+	11 -> 27
+	11 -> 28
+	12 -> 29
+	12 -> 30
+	12 -> 31
+	12 -> 32
+	3 -> 7
+	4 -> 7
+	5 -> 7
+	6 -> 7
+	7 -> 38
+	7 -> 39
+	7 -> 40
+	7 -> 41
+	7 -> 62
+	13 -> 33
+	14 -> 33
+	15 -> 33
+	16 -> 33
+	17 -> 34
+	18 -> 34
+	19 -> 34
+	20 -> 34
+	21 -> 35
+	22 -> 35
+	23 -> 35
+	24 -> 35
+	25 -> 36
+	26 -> 36
+	27 -> 36
+	28 -> 36
+	29 -> 37
+	30 -> 37
+	31 -> 37
+	32 -> 37
+	33 -> 42
+	33 -> 43
+	33 -> 44
+	33 -> 45
+	33 -> 63
+	34 -> 46
+	34 -> 47
+	34 -> 48
+	34 -> 49
+	34 -> 64
+	35 -> 50
+	35 -> 51
+	35 -> 52
+	35 -> 53
+	35 -> 65
+	36 -> 54
+	36 -> 55
+	36 -> 56
+	36 -> 57
+	36 -> 66
+	37 -> 58
+	37 -> 59
+	37 -> 60
+	37 -> 61
+	37 -> 67
+}

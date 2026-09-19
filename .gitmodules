@@ -1,0 +1,16 @@
+[submodule "Model"]
+	path = Model
+	url = https://github.com/TG-RT-System/Model.git
+	branch = main
+[submodule "Scheduler_Static"]
+	path = Scheduler_Static
+	url = https://github.com/TG-RT-System/Scheduler_Static.git
+	branch = main
+[submodule "Scheduler_Dynamic"]
+	path = Scheduler_Dynamic
+	url = https://github.com/TG-RT-System/Scheduler_Dynamic.git
+	branch = main
+[submodule "Technical_Case"]
+	path = Technical_Case
+	url = https://github.com/TG-RT-System/Technical_Case.git
+	branch = main

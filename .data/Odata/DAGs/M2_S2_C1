@@ -1,0 +1,104 @@
+digraph {
+	rankdir=LR
+	0 [label="0
+W:{'Armv8-A': {'Cortex-A73': 1, 'Cortex-A35': 2}}
+B:{'Armv8-A': {'Cortex-A73': 1, 'Cortex-A35': 2}}" color=black shape=polygon style=rounded]
+	1 [label="1
+W:{'Armv8-A': {'Cortex-A73': 6732, 'Cortex-A35': 13464}}
+B:{'Armv8-A': {'Cortex-A73': 6565, 'Cortex-A35': 13130}}" color=black shape=polygon style=rounded]
+	2 [label="2
+W:{'Armv8-A': {'Cortex-A73': 264088, 'Cortex-A35': 528176}}
+B:{'Armv8-A': {'Cortex-A73': 232949, 'Cortex-A35': 465898}}" color=black shape=polygon style=rounded]
+	3 [label="3
+W:{'Armv8-A': {'Cortex-A73': 1264088, 'Cortex-A35': 2528176}}
+B:{'Armv8-A': {'Cortex-A73': 27118, 'Cortex-A35': 54236}}" color=black shape=polygon style=rounded]
+	4 [label="4
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 105394, 'Cortex-A35': 210788}}" color=black shape=polygon style=rounded]
+	5 [label="5
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 96637, 'Cortex-A35': 193274}}" color=black shape=polygon style=rounded]
+	6 [label="6
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 81677, 'Cortex-A35': 163354}}" color=black shape=polygon style=rounded]
+	7 [label="7
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 42439, 'Cortex-A35': 84878}}" color=black shape=polygon style=rounded]
+	8 [label="8
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 60019, 'Cortex-A35': 120038}}" color=black shape=polygon style=rounded]
+	9 [label="9
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 43965, 'Cortex-A35': 87930}}" color=black shape=polygon style=rounded]
+	10 [label="10
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 886, 'Cortex-A35': 1772}}" color=black shape=polygon style=rounded]
+	11 [label="11
+W:{'Armv8-A': {'Cortex-A73': 118764, 'Cortex-A35': 237528}}
+B:{'Armv8-A': {'Cortex-A73': 98705, 'Cortex-A35': 197410}}" color=black shape=polygon style=rounded]
+	12 [label="12
+W:{'Armv8-A': {'Cortex-A73': 97020, 'Cortex-A35': 194040}}
+B:{'Armv8-A': {'Cortex-A73': 40721, 'Cortex-A35': 81442}}" color=black shape=polygon style=rounded]
+	13 [label="13
+W:{'Armv8-A': {'Cortex-A73': 97020, 'Cortex-A35': 194040}}
+B:{'Armv8-A': {'Cortex-A73': 6744, 'Cortex-A35': 13488}}" color=black shape=polygon style=rounded]
+	14 [label="14
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 71909, 'Cortex-A35': 143818}}" color=black shape=polygon style=rounded]
+	15 [label="15
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 39172, 'Cortex-A35': 78344}}" color=black shape=polygon style=rounded]
+	16 [label="16
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 3373, 'Cortex-A35': 6746}}" color=black shape=polygon style=rounded]
+	17 [label="17
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 72991, 'Cortex-A35': 145982}}" color=black shape=polygon style=rounded]
+	22 [label="22
+W:{'Armv8-A': {'Cortex-A73': 55264, 'Cortex-A35': 110528}}
+B:{'Armv8-A': {'Cortex-A73': 42141, 'Cortex-A35': 84282}}" color=black shape=polygon style=rounded]
+	18 [label="18
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 31502, 'Cortex-A35': 63004}}" color=black shape=polygon style=rounded]
+	19 [label="19
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 75373, 'Cortex-A35': 150746}}" color=black shape=polygon style=rounded]
+	20 [label="20
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 12777, 'Cortex-A35': 25554}}" color=black shape=polygon style=rounded]
+	21 [label="21
+W:{'Armv8-A': {'Cortex-A73': 75460, 'Cortex-A35': 150920}}
+B:{'Armv8-A': {'Cortex-A73': 36735, 'Cortex-A35': 73470}}" color=black shape=polygon style=rounded]
+	23 [label="23
+W:{'Armv8-A': {'Cortex-A73': 55264, 'Cortex-A35': 110528}}
+B:{'Armv8-A': {'Cortex-A73': 16684, 'Cortex-A35': 33368}}" color=black shape=polygon style=rounded]
+	0 -> 1
+	1 -> 2
+	1 -> 3
+	2 -> 4
+	2 -> 5
+	2 -> 6
+	2 -> 7
+	3 -> 8
+	3 -> 9
+	3 -> 10
+	3 -> 11
+	4 -> 12
+	5 -> 12
+	6 -> 12
+	7 -> 12
+	8 -> 13
+	9 -> 13
+	10 -> 13
+	11 -> 13
+	12 -> 14
+	12 -> 15
+	12 -> 16
+	12 -> 17
+	12 -> 22
+	13 -> 18
+	13 -> 19
+	13 -> 20
+	13 -> 21
+	13 -> 23
+}
