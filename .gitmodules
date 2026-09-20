@@ -10,7 +10,3 @@
 	path = Scheduler_Dynamic
 	url = https://github.com/TG-RT-System/Scheduler_Dynamic.git
 	branch = main
-[submodule "Technical_Case"]
-	path = Technical_Case
-	url = https://github.com/TG-RT-System/Technical_Case.git
-	branch = main
