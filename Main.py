@@ -140,13 +140,3 @@ if __name__ == "__main__":
     print(f"Opt: \t ret:{_ms} \t time cost:{_et - _st:.4f}")
 
 
-    """ 4. Data Output """
-    if _dl:
-        # (1) DAG Fig;
-        DAG_Fig_Output(_td, _rp + "/Odata/DAGs")
-
-        # (2) Gantt Fig;
-        Gantt_Fig_Output(_td, _dl,  _rp + "/Odata/Gantt")
-
-        # (3) Schedule Table;
-        Schedule_Tab_Output(_td, _dl,  _rp + "/Odata/Table")

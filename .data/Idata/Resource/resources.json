@@ -1,0 +1,15 @@
+{
+  "CPU": {
+    "0": {"TYPE": "ARM", "FREQ": 1000},
+    "1": {"TYPE": "ARM", "FREQ": 1000},
+    "2": {"TYPE": "ARM", "FREQ": 1000},
+    "3": {"TYPE": "ARM", "FREQ": 1000},
+    "4": {"TYPE": "ARM", "FREQ": 1000},
+    "5": {"TYPE": "ARM", "FREQ": 1000},
+    "6": {"TYPE": "ARM", "FREQ": 1000},
+    "7": {"TYPE": "ARM", "FREQ": 1000}
+},
+  "CRI": {
+    "0": {"C_l": 10, "C_u": 10}
+  }
+}
